@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\MicroServiceProject\\Microservices\\Services\\Catalog\\Course.Services.Catalog\\Course.Services.Catalog.csproj": {}
+    "C:\\Projects\\MicroservicesProject\\Microservices\\Services\\Catalog\\Course.Services.Catalog\\Course.Services.Catalog.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\MicroServiceProject\\Microservices\\Services\\Catalog\\Course.Services.Catalog\\Course.Services.Catalog.csproj": {
+    "C:\\Projects\\MicroservicesProject\\Microservices\\Services\\Catalog\\Course.Services.Catalog\\Course.Services.Catalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\MicroServiceProject\\Microservices\\Services\\Catalog\\Course.Services.Catalog\\Course.Services.Catalog.csproj",
+        "projectUniqueName": "C:\\Projects\\MicroservicesProject\\Microservices\\Services\\Catalog\\Course.Services.Catalog\\Course.Services.Catalog.csproj",
         "projectName": "Course.Services.Catalog",
-        "projectPath": "C:\\Projects\\MicroServiceProject\\Microservices\\Services\\Catalog\\Course.Services.Catalog\\Course.Services.Catalog.csproj",
+        "projectPath": "C:\\Projects\\MicroservicesProject\\Microservices\\Services\\Catalog\\Course.Services.Catalog\\Course.Services.Catalog.csproj",
         "packagesPath": "C:\\Users\\ayhan\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\MicroServiceProject\\Microservices\\Services\\Catalog\\Course.Services.Catalog\\obj\\",
+        "outputPath": "C:\\Projects\\MicroservicesProject\\Microservices\\Services\\Catalog\\Course.Services.Catalog\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"

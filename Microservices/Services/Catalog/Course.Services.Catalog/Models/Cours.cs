@@ -3,12 +3,13 @@ using MongoDB.Bson;
 
 namespace Course.Services.Catalog.Models
 {
-    public class Course
+    public class Cours
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public int Id { get; set; }
+        public string Id { get; set; }
         public int  Name { get; set; }
+        public string Description { get; set; } 
         [BsonRepresentation(BsonType.Decimal128)]
         public decimal Price { get; set; }
         public string UserId { get; set; }
@@ -21,5 +22,8 @@ namespace Course.Services.Catalog.Models
 
         [BsonRepresentation(BsonType.ObjectId)]
         public string CategoryId { get; set; }
+
+        [BsonIgnore]
+        public Category Category { get; set; }
     }
 }

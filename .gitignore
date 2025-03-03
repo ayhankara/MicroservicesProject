@@ -78,3 +78,6 @@ Microservices/Services/Catalog/Course.Services.Catalog/obj/Debug/net8.0/ref/Cour
 Shared/Course.Shared/obj/Debug/netcoreapp3.1/Course.Shared.assets.cache
 Shared/Course.Shared/obj/Debug/netcoreapp3.1/Course.Shared.AssemblyInfoInputs.cache
 Microservices/Services/Catalog/Course.Services.Catalog/obj/Debug/net8.0/refint/Course.Services.Catalog.dll
+Shared/Course.Shared/obj/Debug/netcoreapp3.1/Course.Shared.AssemblyInfo.cs
+Microservices/Services/Catalog/Course.Services.Catalog/obj/Debug/net8.0/Course.Services.Catalog.sourcelink.json
+Microservices/.vs/Microservices/v17/DocumentLayout.backup.json

@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{8926EB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course.Shared", "..\Shared\Course.Shared\Course.Shared.csproj", "{0EEDACA1-7870-41C0-8727-635BA5F1C1FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course.IdentityServer", "..\IdentityServer\FreeCourse.IdentityServer\Course.IdentityServer.csproj", "{963847D7-BD90-40D8-B924-F3637C6F517E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{0EEDACA1-7870-41C0-8727-635BA5F1C1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EEDACA1-7870-41C0-8727-635BA5F1C1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EEDACA1-7870-41C0-8727-635BA5F1C1FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{963847D7-BD90-40D8-B924-F3637C6F517E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{963847D7-BD90-40D8-B924-F3637C6F517E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{963847D7-BD90-40D8-B924-F3637C6F517E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{963847D7-BD90-40D8-B924-F3637C6F517E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

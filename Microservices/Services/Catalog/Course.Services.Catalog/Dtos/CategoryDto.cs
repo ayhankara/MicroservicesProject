@@ -1,8 +1,15 @@
-﻿namespace Course.Services.Catalog.Dtos
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using MongoDB.Bson.Serialization.Attributes;
+
+namespace Course.Services.Catalog.Dtos
 {
     public class CategoryDto
     {
-        public int Id { get; set; }
+        [BsonIgnoreIfNull] // MongoDB için
+        [BindNever] // ASP.NET Core doğrulamasında kontrol etme
+        public string? Id { get; set; }
+
         public string Name { get; set; }
     }
+
 }

@@ -11,7 +11,9 @@ namespace Course.Services.Catalog.Mapping
             CreateMap<Cours, CourseDto>().ReverseMap();
             CreateMap<Category, CategoryDto>().ReverseMap();
             CreateMap<Feature, FeatureDto>().ReverseMap();
+
             CreateMap<Cours, CourseCreateDto>().ReverseMap();
+            CreateMap<Cours, CourseUpdateDto>().ReverseMap();
 
         }
     }

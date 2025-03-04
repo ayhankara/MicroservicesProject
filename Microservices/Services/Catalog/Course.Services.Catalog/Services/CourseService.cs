@@ -88,7 +88,7 @@ namespace Course.Services.Catalog.Services
             return Response<CourseDto>.Success(_mapper.Map<CourseDto>(newCourse), 200);
         }
 
-        public async Task<Response<NoContent>> UpdateAsync(CourseUpdateDto courseUpdateDto)
+        public async Task<Response<Shared.Dtos.NoContent>> UpdateAsync(CourseUpdateDto courseUpdateDto)
         {
             var updateCourse = _mapper.Map<Cours>(courseUpdateDto);
 
@@ -96,25 +96,25 @@ namespace Course.Services.Catalog.Services
 
             if (result == null)
             {
-                return Response<NoContent>.Fail("Course not found", 404);
+                return Response<Shared.Dtos.NoContent>.Fail("Course not found", 404);
             }
 
             //await _publishEndpoint.Publish<CourseNameChangedEvent>(new CourseNameChangedEvent { CourseId = updateCourse.Id, UpdatedName = courseUpdateDto.Name });
 
-            return Response<NoContent>.Success(204);
+            return Response<Shared.Dtos.NoContent>.Success(204);
         }
 
-        public async Task<Response<NoContent>> DeleteAsync(string id)
+        public async Task<Response<Shared.Dtos.NoContent>> DeleteAsync(string id)
         {
             var result = await _courseCollection.DeleteOneAsync(x => x.Id == id);
 
             if (result.DeletedCount > 0)
             {
-                return Response<NoContent>.Success(204);
+                return Response<Shared.Dtos.NoContent>.Success(204);
             }
             else
             {
-                return Response<NoContent>.Fail("Course not found", 404);
+                return Response<Shared.Dtos.NoContent>.Fail("Course not found", 404);
             }
         }
     }

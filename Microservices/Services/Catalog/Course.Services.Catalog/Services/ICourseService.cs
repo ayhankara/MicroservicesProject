@@ -15,8 +15,8 @@ namespace Course.Services.Catalog.Services
 
         Task<Response<CourseDto>> CreateAsync(CourseCreateDto courseCreateDto);
 
-        Task<Response<NoContent>> UpdateAsync(CourseUpdateDto courseUpdateDto);
+        Task<Response<Shared.Dtos.NoContent>> UpdateAsync(CourseUpdateDto courseUpdateDto);
 
-        Task<Response<NoContent>> DeleteAsync(string id);
+        Task<Response<Shared.Dtos.NoContent>> DeleteAsync(string id);
     }
 }
